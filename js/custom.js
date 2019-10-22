@@ -20,7 +20,6 @@ $( document ).ready(function() {
 			$(".button-navbar .icon-bar-absolute-second").show();
 		}
 	})
-
 	
 
 })
