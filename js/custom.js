@@ -12,12 +12,14 @@ $( document ).ready(function() {
 			$(".button-navbar div.icon-bar").show();
 			$(".button-navbar .icon-bar-absolute-first").hide();
 			$(".button-navbar .icon-bar-absolute-second").hide();
+			// $("body").css({"overflow" : "auto", "padding-right" : "0px"});
 		} else{
 			$(".overlay-menu-items").show(800);
 			$(".overlay-menu-items").addClass("active-nav");
 			$(".button-navbar div.icon-bar").hide();
 			$(".button-navbar .icon-bar-absolute-first").show();
 			$(".button-navbar .icon-bar-absolute-second").show();
+			// $("body").css({"overflow" : "hidden", "padding-right" : "17px"});
 		}
 	})
 	

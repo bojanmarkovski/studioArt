@@ -19,9 +19,10 @@ body{
 .pd-bottom{
 	padding-bottom: 30px;
 }
+
 /*BUTTON NAVBAR*/
 .button-navbar{
-	position: absolute;
+	position: fixed;
 	top: 30px;
 	cursor: pointer;
 	z-index: 2;
@@ -54,6 +55,7 @@ body{
 	transform: rotate(-45deg);
 	top: 10px;
 	display: none;
+	background-color: #B3AA6F;
 }
 
 .button-navbar .icon-bar-absolute-second{
@@ -63,6 +65,7 @@ body{
 	top: 10px;
 	transition: .25s ease-in-out;
 	display: none;
+	background-color: #B3AA6F;
 }
 
 /*MENU*/
@@ -89,6 +92,12 @@ body{
 	border-bottom: 1px solid #B3AA6F;
 }
 
+.menu-items ul{
+	margin-top: 80px;
+	padding: 0;
+	text-align: center;
+}
+
 .menu-items ul li a{
 	color: #B3AA6F;
 	text-decoration: none;
@@ -101,16 +110,34 @@ body{
     padding-bottom: 5px;
     overflow: hidden;
     color: red;
-}
-
-.menu-items ul{
-	margin-top: 80px;
-	margin-left: 40px;
-}
-
-.menu-items ul li{
 	margin-top: 20px;
 	font-size: 20px;
+}
+
+/*HOVER EFFECT ON MENU ITEMS*/
+.hover-effect {
+  display: inline-block;
+  position: relative;
+  padding: 5px 0;
+}
+.hover-effect:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  background-color: #B3AA6F;
+  transition: transform 0.2s;
+}
+.hover-effect:hover:after {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 991px){
+	
 }
 
 /*FOOTER*/
@@ -145,3 +172,4 @@ body{
 	background-size: cover;
 	height: 500px;
 }
+
