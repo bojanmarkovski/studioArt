@@ -1,4 +1,8 @@
 
+window.addEventListener("load", function() {
+		    const loader = document.querySelector(".loader");
+		    loader.className += " hidden";
+		});
 
 $( document ).ready(function() {
 
@@ -22,6 +26,4 @@ $( document ).ready(function() {
 			// $("body").css({"overflow" : "hidden", "padding-right" : "17px"});
 		}
 	})
-	
-
 })

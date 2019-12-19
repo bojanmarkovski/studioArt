@@ -1,3 +1,42 @@
+/* LOADER */
+.loader {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.lds-dual-ring {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+}
+.lds-dual-ring:after {
+	content: " ";
+	display: block;
+	width: 46px;
+	height: 46px;
+	margin: 1px;
+	border-radius: 50%;
+	border: 5px solid #D19A4C;
+	border-color: #D19A4C transparent #D19A4C transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* LOADER END */
+
 /*FONT*/
 @font-face {
   font-family: SretenKostic;
@@ -25,6 +64,7 @@ body{
 	font-family: SretenKostic;
 	background-color: #000;
 	color: #fff;
+	min-width: 320px;
 }
 
 .pd-top{
@@ -347,13 +387,17 @@ video{
     left: 100px;
 }
 
-/*.test{
-	display: flex;
-	justify-content: space-around;
-}*/
-
 .gallery-images img{
 	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 991px) and (max-height: 450px){
+	.menu-items ul{
+		margin-top: 30px;
+	}
+	.menu-items ul li{
+		margin-top: 0px;
+	}
 }
