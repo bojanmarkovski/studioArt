@@ -1,3 +1,8 @@
+/*FONT*/
+@font-face {
+  font-family: SretenKostic;
+  src: url("assets/font/Roboto-Regular.ttf");
+}
 ul{
 	list-style: none;
 }
@@ -7,7 +12,17 @@ a{
 	color: #fff;
 }
 
+a:hover{
+	text-decoration: none;
+	color: #D19A4C;
+}
+
+a:focus{
+	color: #D19A4C;
+}
+
 body{
+	font-family: SretenKostic;
 	background-color: #000;
 	color: #fff;
 }
@@ -18,6 +33,24 @@ body{
 
 .pd-bottom{
 	padding-bottom: 30px;
+}
+
+hr{
+	width: 80%;
+	height: 2px;
+	background-color: #D19A4C;
+}
+
+.hr-text{
+	width: 60px;
+}
+
+div h2{
+	/*color: #D19A4C;*/
+}
+
+p{
+	font-size: 15px;
 }
 
 /*BUTTON NAVBAR*/
@@ -33,7 +66,7 @@ body{
 }
 .button-navbar div{
 	height: 3px;
-	background-color: #fff;
+	background-color: #D19A4C;
 	margin-bottom: 4px;
 }
 
@@ -55,7 +88,7 @@ body{
 	transform: rotate(-45deg);
 	top: 10px;
 	display: none;
-	background-color: #fff;
+	background-color: #D19A4C;
 }
 
 .button-navbar .icon-bar-absolute-second{
@@ -65,7 +98,7 @@ body{
 	top: 10px;
 	transition: .25s ease-in-out;
 	display: none;
-	background-color: #fff;
+	background-color: #D19A4C;
 }
 
 /*MENU*/
@@ -89,7 +122,7 @@ body{
 }
 
 .active{
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #D19A4C;
 }
 
 .menu-items ul{
@@ -129,7 +162,7 @@ body{
   width: 100%;
   height: 2px;
   transform: scaleX(0);
-  background-color: #fff;
+  background-color: #D19A4C;
   transition: transform 0.2s;
 }
 .hover-effect:hover:after {
@@ -142,8 +175,12 @@ body{
 
 /*FOOTER*/
 
-.footer{
-	border-top: 1px solid #fff;
+.footer a{
+	color: #EABE81;
+}
+
+.footer a:hover{
+	color: #D19A4C;
 }
 
 .social-media i{
@@ -154,9 +191,17 @@ body{
 }
 
 .social-media div{
-	border: 1px solid #fff;
+	border: 1px solid #EABE81;
 	border-radius: 50%;
 	display: inline-block;
+}
+
+/*HOME*/
+.height-100vh{
+	height: 100vh;
+}
+video{
+	height: 100%;
 }
 
 
@@ -164,14 +209,6 @@ body{
 .about-us p{
 	text-align: justify;
 }
-
-/*.bg-about-us{
-	background-image: url("https://visitskopje.mk/wp-content/uploads/2019/02/18278916_1378222488923898_447925796811317055_o.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 500px;
-}*/
 
 .slider-container div{
 	height: 300px;
@@ -182,30 +219,6 @@ body{
 
 .slider-container div:focus{
 	outline: unset;
-}
-
-.slider-container div.img-1{
-	background: url("assets/images/studio-art08.jpg");
-}
-
-.slider-container div.img-2{
-	background: url("assets/images/studio-art09.jpg");
-}
-
-.slider-container div.img-3{
-	background: url("assets/images/studio-art03.jpg");
-}
-
-.slider-container div.img-4{
-	background: url("assets/images/studio-art04.jpg");
-}
-
-.slider-container div.img-5{
-	background: url("assets/images/studio-art02.jpg");
-}
-
-.slider-container div.img-6{
-	background: url("assets/images/studio-art05.jpg");
 }
 
 /*CONTACT*/
@@ -247,10 +260,10 @@ body{
 }
 
 .card-6 .card-name {
-    left: -250px;
+    left: -280px;
     bottom: 30px;
     padding: 25px;
-    color: #FFF;
+    color: #f5ce95;
     z-index: 5;
     font-weight: bold;
     font-size: 18px;
@@ -276,7 +289,7 @@ body{
     left: -500px;
     width: 200px;
     height: 100px;
-    background-color: #004c8c;
+    background-color: #916523;
     z-index: -1;
     top: 0px;
     transform: skew(-45deg);
@@ -290,7 +303,7 @@ body{
     left: -150px;
     width: 120px;
     height: 60px;
-    background-color: #004c8c;
+    background-color: #fcd295;
     z-index: -2;
     top: -20px;
     transform: skew(-45deg);
@@ -302,7 +315,7 @@ body{
 .card-6::before {
     content: "";
     position: absolute;
-    background-color: #1793b9;
+    background-color: #EABE81;
     opacity: 0.9;
     bottom: 110px;
     left: -125px;
@@ -338,3 +351,9 @@ body{
 	display: flex;
 	justify-content: space-around;
 }*/
+
+.gallery-images img{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
